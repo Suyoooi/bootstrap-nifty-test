@@ -18,7 +18,7 @@ const Header = () => {
           />
           {/* </div> */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="flex items-baseline ml-10 space-x-4">
               {/* <Link href="/">
                 <div className="px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-md">
                   Dashboard
@@ -33,44 +33,81 @@ const Header = () => {
                 </button>
 
                 {isDropdownOpen && (
-                  <div className="absolute z-50 mt-2 w-screen rounded-md bg-[#292929] shadow-lg ring-1 ring-black ring-opacity-5">
+                  <div className="absolute z-50 mt-2 w-screen h-64 bg-[#292929] shadow-lg ring-1 ring-black ring-opacity-5">
                     <div
-                      className="py-1"
+                      className="py-1 w-[180px]"
                       role="menu"
                       aria-orientation="vertical"
                       aria-labelledby="options-menu"
                     >
+                      <div
+                        className="block pl-2.5 py-1 text-xs text-white hover:bg-gray-100 hover:text-gray-900"
+                        role="menuitem"
+                      >
+                        TIBCO
+                      </div>
+                      <div
+                        className="block py-1 pl-5 text-xs text-white hover:bg-gray-100 hover:text-gray-900"
+                        role="menuitem"
+                      >
+                        TIBCO 서버 관리
+                      </div>
+                      <div
+                        className="block pl-2.5 py-1 text-xs text-white hover:bg-gray-100 hover:text-gray-900"
+                        role="menuitem"
+                      >
+                        EMS
+                      </div>
                       <Link href="#">
                         <div
-                          className="block px-4 py-2 text-sm text-white hover:bg-gray-100 hover:text-gray-900"
+                          className="block py-1 pl-5 text-xs text-white hover:bg-gray-100 hover:text-gray-900"
                           role="menuitem"
                         >
-                          Account settings
+                          EMS 서버 관리
                         </div>
                       </Link>
                       <div
                         href="#"
-                        className="block px-4 py-2 text-sm text-white hover:bg-gray-100 hover:text-gray-900"
+                        className="block py-1 pl-5 text-xs text-white hover:bg-gray-100 hover:text-gray-900"
                         role="menuitem"
                       >
-                        Support
+                        EMS 서버 이력 조회
                       </div>
                       <div
                         href="#"
-                        className="block px-4 py-2 text-sm text-white hover:bg-gray-100 hover:text-gray-900"
+                        className="block py-1 pl-5 text-xs text-white hover:bg-gray-100 hover:text-gray-900"
                         role="menuitem"
                       >
-                        License
+                        EMS 서버 이력 조회
                       </div>
-                      <form method="POST" action="#">
-                        <button
-                          type="submit"
-                          className="block w-full px-4 py-2 text-left text-sm text-white hover:bg-gray-100 hover:text-gray-900"
-                          role="menuitem"
-                        >
-                          Sign out
-                        </button>
-                      </form>
+                      <div
+                        href="#"
+                        className="block py-1 pl-5 text-xs text-white hover:bg-gray-100 hover:text-gray-900"
+                        role="menuitem"
+                      >
+                        EMS 속성 조회
+                      </div>
+                      <div
+                        href="#"
+                        className="block px-4 py-1 text-xs text-white hover:bg-gray-100 hover:text-gray-900"
+                        role="menuitem"
+                      >
+                        EMS Queue / Topic 추가
+                      </div>
+                      <div
+                        href="#"
+                        className="block px-4 py-1 text-xs text-white hover:bg-gray-100 hover:text-gray-900"
+                        role="menuitem"
+                      >
+                        EMS 서비스 조회
+                      </div>
+                      <div
+                        href="#"
+                        className="block px-4 py-1 text-xs text-white hover:bg-gray-100 hover:text-gray-900"
+                        role="menuitem"
+                      >
+                        EMS 서비스 이력 조회
+                      </div>
                     </div>
                   </div>
                 )}
@@ -80,10 +117,10 @@ const Header = () => {
                 {/* <div>/</div>
                 <div>홍길동</div> */}
                 <img
-                  className="h-4 w-4 self-center"
+                  className="self-center w-4 h-4"
                   src="/img/icon/profile.png"
                 />
-                <img className="h-4 w-4 self-center" src="/img/icon/lock.png" />
+                <img className="self-center w-4 h-4" src="/img/icon/lock.png" />
               </div>
             </div>
           </div>
