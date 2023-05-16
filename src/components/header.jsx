@@ -24,7 +24,7 @@ const Header = () => {
                   Dashboard
                 </div>
               </Link> */}
-              <div className="relative">
+              <div className="relative flex flex-row ">
                 <button
                   className="px-3 py-2 text-sm font-medium text-white focus:outline-none"
                   onClick={toggleDropdown}
@@ -112,7 +112,7 @@ const Header = () => {
                   </div>
                 )}
               </div>
-              <div className="flex gap-3 text-white">
+              <div className="flex self-center gap-3 text-white">
                 <div>portal / 홍길동</div>
                 {/* <div>/</div>
                 <div>홍길동</div> */}
