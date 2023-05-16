@@ -24,7 +24,7 @@ const Header = () => {
                   Dashboard
                 </div>
               </Link> */}
-              <div className="relative flex flex-row ">
+              <div className="relative">
                 <button
                   className="px-3 py-2 text-sm font-medium text-white focus:outline-none"
                   onClick={toggleDropdown}
