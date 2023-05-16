@@ -73,14 +73,14 @@ const SideMenu = () => {
               </li>
             </ul>
           </div>
-          <div className="flex items-center justify-center h-14">
+          {/* <div className="flex items-center justify-center h-14">
             <div
               className="flex items-center justify-center w-8 h-8 bg-gray-700 rounded-full cursor-pointer hover:bg-gray-900"
               onClick={toggleMenu}
             >
               {isOpen ? "-" : "+"}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={isOpen ? "hidden" : "visible"}>
