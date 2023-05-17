@@ -42,7 +42,7 @@ const SideMenu = () => {
                 </a>
               </li>
               <li className="mb-2.5 ml-6 self-start">
-                <a href="#" className="text-xs text-[#666666]">
+                <a href="ems/server" className="text-xs text-[#666666]">
                   EMS 서버 관리
                 </a>
               </li>
