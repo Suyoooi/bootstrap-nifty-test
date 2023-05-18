@@ -3,7 +3,6 @@ import Link from "next/link";
 
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
 
   return (
@@ -31,7 +30,6 @@ const Header = () => {
                 >
                   {isDropdownOpen ? "메뉴 전체닫기" : "메뉴 전체보기"}
                 </button>
-
                 {isDropdownOpen && (
                   <div className="absolute z-50 mt-2 w-screen h-64 bg-[#292929] shadow-lg ring-1 ring-black ring-opacity-5">
                     <div
